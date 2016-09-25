@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import TodoHeader from './TodoHeader';
+import TodoList from './TodoList';
 
 class App extends React.Component {
   constructor(props) {
@@ -9,10 +10,11 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello, World</h1>
-      </div>
+        <TodoHeader />
+        <TodoList />
+      </div> 
     );
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+export default App;
